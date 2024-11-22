@@ -114,37 +114,27 @@
     }
 }
 
-/* Footer Styles */
+/* Footer Container */
 .footer {
-    background-color: #000 !important;
-    color: #fff !important;
-    padding: 20px 0 !important;
-    font-family: Arial, sans-serif !important;
-}
-
-.footer-container {
     display: flex !important;
     flex-wrap: wrap !important;
-    justify-content: space-between !important;
-    max-width: 1200px !important;
-    margin: auto !important;
+    justify-content: space-between !important; /* Space between columns */
+    padding: 20px !important;
+    background-color: #333 !important; /* Dark background */
+    color: #fff !important; /* White text */
+    text-align: left !important;
 }
 
+/* Footer Column */
 .footer-box {
-    flex: 1 1 calc(25% - 20px) !important; /* Flex-grow for equal spacing */
-    margin: 0 10px !important;
-    min-width: 200px !important; /* Ensure boxes are not too small */
+    flex: 1 1 20% !important; /* Responsive column width, 20% for larger screens */
+    margin: 10px !important;
+    min-width: 200px !important; /* Ensures columns don't get too narrow */
 }
 
-.footer-box h5 {
-    font-size: 18px !important;
-    text-transform: uppercase !important;
-    margin-bottom: 15px !important;
-    color: #fff !important;
-}
-
+/* Footer List */
 .footer-box ul {
-    list-style: none !important;
+    list-style-type: none !important;
     padding: 0 !important;
 }
 
@@ -152,66 +142,80 @@
     margin-bottom: 10px !important;
 }
 
+.footer-box ul li h5 {
+    font-size: 1.2rem !important;
+    font-weight: bold !important;
+    margin-bottom: 15px !important;
+    color: #00aaff !important; /* Accent color for headings */
+}
+
+/* Footer Links */
 .footer-box ul li a {
     text-decoration: none !important;
-    color: #ccc !important;
-    transition: color 0.3s !important;
+    color: #ddd !important;
+    font-size: 1rem !important;
+    transition: color 0.3s ease !important;
 }
 
 .footer-box ul li a:hover {
-    color: #f1c40f !important;
+    color: #00aaff !important; /* Hover effect for links */
 }
 
-.footer input[type="email"],
-.footer input[type="submit"] {
+/* Email Input */
+.footer-box input[type="email"] {
     width: 100% !important;
-    padding: 10px !important;
+    padding: 8px !important;
     margin-bottom: 10px !important;
-    border-radius: 4px !important;
+    border: 1px solid #ddd !important;
+    border-radius: 5px !important;
+    font-size: 1rem !important;
+}
+
+.footer-box input[type="submit"] {
+    padding: 10px 20px !important;
+    background-color: #007bff !important;
+    color: #fff !important;
     border: none !important;
-}
-
-.footer input[type="submit"] {
-    background-color: #f1c40f !important;
-    color: #000 !important;
+    border-radius: 5px !important;
     cursor: pointer !important;
-    text-transform: uppercase !important;
+    transition: background-color 0.3s ease !important;
 }
 
-.footer input[type="submit"]:hover {
-    background-color: #e1b800 !important;
+.footer-box input[type="submit"]:hover {
+    background-color: #0056b3 !important; /* Darker blue on hover */
 }
 
-.footer span i {
-    color: #ccc !important;
-    margin-right: 10px !important;
-    transition: color 0.3s !important;
+/* Social Media Icons */
+.footer-box span i {
+    color: #00aaff !important;
+    margin: 0 5px !important;
+    transition: transform 0.3s ease !important, color 0.3s ease !important;
 }
 
-.footer span i:hover {
-    color: #f1c40f !important;
+.footer-box span i:hover {
+    color: #fff !important;
+    transform: scale(1.2) !important; /* Slight zoom on hover */
 }
 
+/* Footer Bottom Row */
 .copy-right {
-    font-size: 14px !important;
     margin-top: 20px !important;
-    color: #ccc !important;
+    font-size: 0.9rem !important;
+    color: #bbb !important;
     text-align: center !important;
 }
 
-/* Responsive Footer */
+/* Responsive Design */
 @media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column !important;
+    .footer {
+        flex-direction: column !important; /* Stack columns on smaller screens */
         align-items: center !important;
     }
-
+    
     .footer-box {
-        margin-bottom: 20px !important;
-        flex: 1 1 100% !important;
+        text-align: center !important; /* Center align text for smaller screens */
     }
 }
-
 
 /* General Button Styles */
 .main-button {
@@ -235,4 +239,12 @@
     color: #fff !important; /* Ensure text stays white */
 }
 
+
+
+.service-logo {
+    width: 60px !important; /* Adjust width as needed */
+    height: auto !important; /* Keep aspect ratio */
+    max-width: 100% !important;
+    object-fit: contain !important; /* Ensures the logo fits without distortion */
+}
 
