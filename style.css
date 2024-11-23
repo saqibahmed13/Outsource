@@ -114,6 +114,18 @@
     }
 }
 
+
+/* Default navbar background (transparent) */
+.navbar {
+    background-color: transparent !important;
+    transition: background-color 0.3s ease !important;
+}
+
+/* Scrolled navbar background */
+.navbar.scrolled {
+    background-color: #000 !important; /* Black background */
+}
+
 /* Footer Container */
 .footer {
     display: flex !important;
@@ -357,13 +369,76 @@
     }
 
     .review {
-        font-size: 3rem !important; /* Reduce font size for smaller screens */
+        font-size: 2rem !important; /* Reduce font size for smaller screens */
     }
 
     .review-name {
-        font-size: 3rem !important; /* Reduce name size for smaller screens */
+        font-size: 2rem !important; /* Reduce name size for smaller screens */
     }
 }
+
+
+
+/* Reduce gap below the main heading */
+.main-heading {
+    font-size: 2rem !important; /* Adjust as needed */
+    text-align: center !important;
+    margin-bottom: 10px !important; /* Decrease bottom margin */
+    color: #333 !important; /* Neutral text color */
+}
+
+/* Adjust swiper margin */
+.swiper {
+    margin-top: 0 !important; /* Remove extra top margin */
+}
+
+
+/* Remove gap between h1 and client images */
+.partners-section h1 {
+    margin-bottom: 10px !important; /* Decrease the gap between h1 and images */
+}
+
+/* Styling for the partners-section */
+.partners-section {
+    display: flex !important;
+    justify-content: center !important; /* Center the content */
+    align-items: center !important;
+    flex-wrap: wrap !important;
+}
+
+/* Modify the size of images inside the swiper-slide */
+.ourclient img {
+    width: 150px !important; /* Adjust image width */
+    height: auto !important; /* Maintain aspect ratio */
+    object-fit: contain !important; /* Ensure images don't stretch or distort */
+    margin: 0 auto !important; /* Center images inside their container */
+}
+
+/* Optional: Add some padding to the swiper slides if needed */
+.swiper-slide {
+    padding: 10px !important;
+}
+
+/* Remove gap between testimonial section elements */
+.testimonial-sections h1 {
+    margin-bottom: 10px !important; /* Reduces the gap between the h1 and the next section */
+}
+
+.testimonial-sections .review-box {
+    margin-bottom: 10px !important; /* Reduces the gap between the reviews */
+}
+
+.testimonial-sections .main-button {
+    margin-top: 10px !important; /* Reduces the gap above the "view more" button */
+    margin-bottom: 10px !important; /* Reduces the gap below the button */
+}
+
+/* Optional: Reduce the margin for the entire testimonial section */
+.testimonial-sections {
+    margin-bottom: 20px !important; /* Adjust as needed to reduce space at the bottom */
+}
+
+
 
 
 
