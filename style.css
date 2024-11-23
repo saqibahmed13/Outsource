@@ -447,27 +447,30 @@
 
 /* Footer Box */
 .footer-box {
-    flex: 1 1 45% !important; /* Each footer box takes up 45% of the container */
+    flex: 1 1 23% !important; /* Each footer box takes up 23% of the container in desktop view */
     margin: 10px !important;
 }
 
 /* Mobile Specific Styles */
 @media (max-width: 768px) {
-    /* For smaller screens, stack the columns */
+    /* For mobile screens, display in two columns */
     .footers-section {
-        flex-direction: column !important; /* Stack columns */
+        flex-direction: row !important; /* Keep in two columns */
+        flex-wrap: wrap !important;
     }
 
     /* Group "Company" and "Our Services" together */
     .footer-box:nth-child(1), .footer-box:nth-child(2) {
-        width: 100% !important; /* Full width for these two */
+        width: 48% !important; /* 48% width for the first two columns */
     }
 
     /* Group "Quick Links" and "Email Address" together */
     .footer-box:nth-child(3), .footer-box:nth-child(4) {
-        width: 100% !important; /* Full width for these two */
+        width: 48% !important; /* 48% width for the last two columns */
     }
 }
+
+   
 
 
 
