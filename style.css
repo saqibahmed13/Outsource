@@ -438,6 +438,38 @@
     margin-bottom: 20px !important; /* Adjust as needed to reduce space at the bottom */
 }
 
+/* Footer Section */
+.footers-section {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+}
+
+/* Footer Box */
+.footer-box {
+    flex: 1 1 45% !important; /* Each footer box takes up 45% of the container */
+    margin: 10px !important;
+}
+
+/* Mobile Specific Styles */
+@media (max-width: 768px) {
+    /* For smaller screens, stack the columns */
+    .footers-section {
+        flex-direction: column !important; /* Stack columns */
+    }
+
+    /* Group "Company" and "Our Services" together */
+    .footer-box:nth-child(1), .footer-box:nth-child(2) {
+        width: 100% !important; /* Full width for these two */
+    }
+
+    /* Group "Quick Links" and "Email Address" together */
+    .footer-box:nth-child(3), .footer-box:nth-child(4) {
+        width: 100% !important; /* Full width for these two */
+    }
+}
+
+
 
 
 
